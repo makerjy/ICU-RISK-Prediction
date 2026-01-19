@@ -47,56 +47,56 @@ ICU 환경에서는 환자 상태가 빠르게 악화되며, 개입 지연은 �
 ⸻
 
 ## Overall Pipeline
-
+```text
 ┌───────────────────────────────┐
-│        MIMIC-IV Dataset        │
-│ (ICU stays, vitals, labs, etc) │
+│        MIMIC-IV Dataset       │
+│ (ICU stays, vitals, labs, etc)│
 └───────────────┬───────────────┘
                 │
                 ▼
 ┌───────────────────────────────┐
-│     Exploratory Analysis       │
-│        (ICU-RISK_EDA)          │
-│ - cohort validation            │
-│ - variable distributions       │
-│ - missingness patterns         │
+│     Exploratory Analysis      │
+│        (ICU-RISK_EDA)         │
+│ - cohort validation           │
+│ - variable distributions      │
+│ - missingness patterns        │
 └───────────────┬───────────────┘
                 │
                 ▼
 ┌───────────────────────────────┐
-│  Feature Engineering & Prep    │
-│     (ICU-RISK_Modeling)        │
-│ - preprocessing pipelines      │
-│ - imbalance handling           │
-│ - baseline feature sets        │
+│  Feature Engineering & Prep   │
+│     (ICU-RISK_Modeling)       │
+│ - preprocessing pipelines     │
+│ - imbalance handling          │
+│ - baseline feature sets       │
 └───────────────┬───────────────┘
                 │
                 ▼
 ┌───────────────────────────────┐
-│        Model Training          │
-│     (ICU-RISK_Modeling)        │
-│ - LR / GB / XGB / LGBM         │
-│ - ensemble voting              │
-│ - cross-validation             │
+│        Model Training         │
+│     (ICU-RISK_Modeling)       │
+│ - LR / GB / XGB / LGBM        │
+│ - ensemble voting             │
+│ - cross-validation            │
 └───────────────┬───────────────┘
                 │
                 ▼
 ┌───────────────────────────────┐
-│     Validation Pipelines       │
-│ (REALMIP_ValidModel_ML)        │
-│ - model structure comparison   │
-│ (REALMIP-MIMIC_IV_imputation)  │
-│ - imputation strategy test     │
+│     Validation Pipelines      │
+│ (REALMIP_ValidModel_ML)       │
+│ - model structure comparison  │
+│ (REALMIP-MIMIC_IV_imputation) │
+│ - imputation strategy test    │
 └───────────────┬───────────────┘
                 │
                 ▼
 ┌───────────────────────────────┐
-│      Service Prototype         │
-│          (icu-risk)            │
-│ - prediction visualization     │
-│ - simple API + UI structure    │
+│      Service Prototype        │
+│          (icu-risk)           │
+│ - prediction visualization    │
+│ - simple API + UI structure   │
 └───────────────────────────────┘
-
+```
 각 단계는 독립 레포로 관리되며, 본 레포는 전체 흐름을 구조적으로 연결합니다.
 
 ⸻
