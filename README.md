@@ -1,6 +1,6 @@
 
 
-#ICU Risk Prediction Pipeline (MIMIC-IV)
+# ICU Risk Prediction Pipeline (MIMIC-IV)
 
 MIMIC-IV ICU 데이터를 기반으로 중증 환자의 사망 위험(mortality) 및 Failure-to-Rescue(FTR) 가능성을 ICU 입실 초기 시점에 예측하기 위한 의료 데이터 분석/머신러닝 파이프라인 프로젝트입니다.
 
