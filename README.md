@@ -131,16 +131,20 @@ Validation Levels
 ---
 
 ## Repositories
-	•	EDA
-	•	https://github.com/makerjy/ICU-RISK_EDA
-	•	Modeling Pipeline
-	•	https://github.com/makerjy/ICU-RISK_Modeling
-	•	Validation — Model Comparison
-	•	https://github.com/makerjy/REALMIP_ValidModel_ML
-	•	Validation — Imputation Strategy Comparison
-	•	https://github.com/makerjy/REALMIP-MIMIC_IV_imputation_cmp
-	•	Service Prototype
-	•	https://github.com/makerjy/icu-risk
+	* EDA
+ 	  [https://github.com/makerjy/ICU-RISK_EDA](https://github.com/makerjy/ICU-RISK_EDA)
+
+	* Modeling Pipeline
+	  [https://github.com/makerjy/ICU-RISK_Modeling](https://github.com/makerjy/ICU-RISK_Modeling)
+	
+	* Validation — Model Comparison
+	  [https://github.com/makerjy/REALMIP_ValidModel_ML](https://github.com/makerjy/REALMIP_ValidModel_ML)
+	
+	* Validation — Imputation Strategy Comparison
+	  [https://github.com/makerjy/REALMIP-MIMIC_IV_imputation_cmp](https://github.com/makerjy/REALMIP-MIMIC_IV_imputation_cmp)
+	
+	* Service Prototype
+	  [https://github.com/makerjy/icu-risk](https://github.com/makerjy/icu-risk)
 
 각 레포는 단독 프로젝트가 아니라, 하나의 ICU 위험 예측 파이프라인에서 서로 다른 단계/실험 축을 담당합니다.
 
