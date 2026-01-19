@@ -115,8 +115,6 @@ ICU 환경에서는 환자 상태가 빠르게 악화될 수 있으며,
 * AUPRC (주요 지표)
 * Recall 중심 해석
 
-클래스 불균형 환경에서 정확도는 의미가 거의 없다고 판단하여,
-고위험 환자를 얼마나 잘 상위에 정렬하는지를 주요 기준으로 사용함.
 
 ### Validation Levels
 
@@ -170,8 +168,6 @@ ICU 환경에서는 환자 상태가 빠르게 악화될 수 있으며,
 
 ## Limitations & Future Work
 
-* Calibration curve 및 decision curve analysis 미포함
-* 시계열 기반 딥러닝 모델(GRU, Transformer)과의 체계적 비교 필요
 * 멀티모달 데이터(ECG waveform, imaging) 결합 구조 확장 가능성
 * 다중 시간 예측(horizon-based risk forecasting) 구조 확장 가능
 
