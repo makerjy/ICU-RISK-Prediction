@@ -11,9 +11,9 @@ MIMIC-IV ICU 데이터를 기반으로 중증 환자의 사망 위험(mortality)
 
 본 메인 레포는 단계별 서브 레포지토리를 연결하는 연구 흐름 인덱스 역할을 수행합니다.
 
-⸻
+---
 
-##Problem Statement
+## Problem Statement
 
 ICU 환경에서는 환자 상태가 빠르게 악화되며, 개입 지연은 사망으로 이어질 수 있습니다. 본 프로젝트는 아래 질문에서 출발합니다.
 	•	ICU 입실 이후 조기 시점에서 사망 또는 구조 실패 위험을 탐지할 수 있는가?
@@ -21,7 +21,7 @@ ICU 환경에서는 환자 상태가 빠르게 악화되며, 개입 지연은 �
 	•	결측치 처리(imputation) 전략이 성능에 어느 정도의 구조적 영향을 주는가?
 	•	복잡한 딥러닝 없이도 단순 ML + 전처리 조합으로 임상적 신호를 포착할 수 있는가?
 
-⸻
+---
 
 ## Dataset
 	•	Source: MIMIC-IV (v2.x)
@@ -38,13 +38,13 @@ ICU 환경에서는 환자 상태가 빠르게 악화되며, 개입 지연은 �
 
 의료 데이터 특성상 cohort 정의와 전처리 선택이 성능에 직접 영향을 주므로, 이를 별도 실험 축으로 분리해 검증합니다.
 
-⸻
+---
 
 ## Project Scope
 	•	단일 split 성능을 보고 끝내는 구조가 아니라,
 	•	전처리/모델 구조/평가 레벨을 분리해 “성능이 어디서 생기고 무너지는지”를 확인하는 연구 설계를 목표로 합니다.
 
-⸻
+---
 
 ## Overall Pipeline
 ```text
@@ -99,7 +99,7 @@ ICU 환경에서는 환자 상태가 빠르게 악화되며, 개입 지연은 �
 ```
 각 단계는 독립 레포로 관리되며, 본 레포는 전체 흐름을 구조적으로 연결합니다.
 
-⸻
+---
 
 ## Evaluation Strategy
 
@@ -128,7 +128,7 @@ Validation Levels
 
 가설: 모델 복잡도보다 데이터 정의/전처리 설계의 영향이 더 클 수 있다.
 
-⸻
+---
 
 ## Repositories
 	•	EDA
@@ -144,7 +144,7 @@ Validation Levels
 
 각 레포는 단독 프로젝트가 아니라, 하나의 ICU 위험 예측 파이프라인에서 서로 다른 단계/실험 축을 담당합니다.
 
-⸻
+---
 
 ## How to Use This Repo
 
@@ -158,14 +158,14 @@ Validation Levels
 추천 탐색 순서:
 	1.	ICU-RISK_EDA → 2) ICU-RISK_Modeling → 3) REALMIP validation repos → 4) icu-risk prototype
 
-⸻
+---
 
 ## Limitations & Future Work
 	•	멀티모달 확장: ECG waveform, imaging 등 결합 구조로 확장 가능
 	•	다중 시간 예측: 단일 시점 분류를 넘어 horizon-based risk forecasting으로 확장 가능
 	•	임상적 사용을 위한 추가 과제: calibration, subgroup fairness, prospective validation 등 (현재 범위 밖)
 
-⸻
+---
 
 ## Notes
 	•	MIMIC-IV는 접근 권한(PhysioNet credentialing)이 필요한 데이터입니다.
